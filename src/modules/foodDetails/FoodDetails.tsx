@@ -28,6 +28,9 @@ function FoodDetails() {
   const removeItemFromCart = () => {
     removeItem(state);
   };
+  const backToMenu = () => {
+    navigate("/");
+  }
 
   return (
     <div className="d-flex food-details-outer">
@@ -52,10 +55,15 @@ function FoodDetails() {
                 <h5 className="my-4 fw-600">Description: {state.desc}</h5>
                 <h5 className="my-4 fw-600">Rating: {state.rate} *</h5>
                 <div>
+                  <div className="btMenu">
+                    <button className="btn btn-primary" onClick={backToMenu}>
+                      Back To Menu
+                    </button>
+                  </div>
                   <div className="cartbtn">
-                  <button className="btn btn-primary" onClick={goToCart}>
-                    Go to Cart
-                  </button>
+                    <button className="btn btn-primary" onClick={goToCart}>
+                      Go to Cart
+                    </button>
                   </div>
                   <div className="addbtn">
                   <button
