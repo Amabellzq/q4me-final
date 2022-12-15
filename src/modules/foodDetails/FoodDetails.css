@@ -10,6 +10,12 @@
 .fw-600 {
   font-weight: 600;
 }
+.btMenu{
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 .cartbtn{
   padding-top: 20px;
   align-items: center;
