@@ -19,7 +19,8 @@ function Dashboard() {
     <div className="wrapper">
       <Header />
       <div className="content">
-        <div className="container mb-5">
+        <div className="DASH">
+        <div className="container mb-12">
           <h4 className="my-4 fw-600 d-blue">Mains</h4>
           <div className="row">
             {Mains.map((items: FoodItems, idx: number) => (
@@ -35,10 +36,13 @@ function Dashboard() {
                   style={{ borderRadius: 15 }}
                   alt="icon"
                 />
+
                 <h5 className="fw-600 black">{items.name}</h5>
+                
               </div>
             ))}
           </div>
+        </div>
         </div>
       </div>
       <Footer />
