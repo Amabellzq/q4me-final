@@ -1,0 +1,30 @@
+.food-details-outer {
+  flex-direction: column;
+  height: 100vh;
+}
+.food-details {
+  background: #efe9e2;
+  flex: 1;
+  overflow-y: auto;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.cartbtn{
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.removebtn{
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.addbtn{
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

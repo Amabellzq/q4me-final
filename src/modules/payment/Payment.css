@@ -1,0 +1,31 @@
+.food-details-outer {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .food-details {
+    background: #efe9e2;
+    flex: 1;
+    overflow-y: auto;
+  }
+  .fw-600 {
+    font-weight: 600;
+  }
+  .solanapay{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .cashpayment{
+    margin-top: 50px;
+  }
+  
+  .btn{
+    align-items: center;
+    height: 40px;
+    width: 300px;
+  }
+
+    
