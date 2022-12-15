@@ -31,7 +31,9 @@ function Payment() {
             <h4 className="my-4 fw-600">Payment Methods</h4>
             <div className="row">
               <div className="col-md-4" style={{ cursor: "pointer" }}>
-                
+                <Wallet>
+                  
+                </Wallet>
               </div>
               <div className="col-md-4" style={{ cursor: "pointer" }}>
                 <div className="solanaPay">
