@@ -22,6 +22,7 @@
   justify-content: space-between;
   padding: 10px;
   background: white;
+  width: 100%;
 }
 .my-cart {
   color: orange;
@@ -67,4 +68,34 @@
 }
 .cartSelection{
   margin-top: 50px;
+  width: 100%;
+}
+.solanapay{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+#cashbtn{
+  margin-right: 100px;
+  background-color: green;
+  width: 100%;
+  height: 60px;
+}
+#checkoutbtn{
+  width: 100%;
+  height: 60px;
+  background-color: green;
+}
+#checkoutdiv{
+  width: 100%;
+  margin-top: 2%; 
+  margin-bottom: 10%;
+}
+button{
+  width: 100%;
+  margin-left: 60px;
 }
