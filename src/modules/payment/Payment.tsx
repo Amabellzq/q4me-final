@@ -1,15 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect, useCallback, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "../common/Footer/Footer";
 import Header from "../common/Header/Header";
 import { DataContext } from "../../context/DataProvider";
-// import {useWallet} from "@solana/wallet-adapter-react";
-import { Wallet } from "../components/ConnectWallet"
-// import GetBalanceWeb3 from "../components/GetBalanceWeb3";
-// import GetBalanceRpc from "../components/GetBalanceRpc";
-// import GetAccountInfo from "../components/GetAccountInfo";
-// import GetTokenBalance from "../components/GetTokenBalance";
-// import TransferLamports from "../components/TransferLamports";
+import { Wallet } from "../../context/Wallet";
+import TransferLamports from "../components/TransferLamports";
 import "./Payment.css";
 
 function Payment() {
@@ -31,16 +26,13 @@ function Payment() {
             <h4 className="my-4 fw-600">Payment Methods</h4>
             <div className="row">
               <div className="col-md-4" style={{ cursor: "pointer" }}>
-                <Wallet>
-                  
-                </Wallet>
               </div>
               <div className="col-md-4" style={{ cursor: "pointer" }}>
                 <div className="solanaPay">
-                   <button className="btn btn-primary">Connect to Solana </button>       { /*          {onPress={connect} */}
+                    <Wallet />
                 </div>
                 <div className="cashpayment">
-                  <button className="btn btn-primary" type="button">Pay By Cash</button>
+                  <button id="cashbtn" className="btn btn-primary" type="button">Pay By Cash</button>
                 </div>
               </div>
             </div>
