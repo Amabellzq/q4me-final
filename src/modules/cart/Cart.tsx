@@ -4,6 +4,7 @@ import Footer from "../common/Footer/Footer";
 import Header from "../common/Header/Header";
 import { DataContext } from "../../context/DataProvider";
 import { FoodItems } from "../../appInterface";
+import { Wallet } from "../../context/Wallet";
 import "./Cart.css";
 
 function Cart() {
@@ -16,7 +17,7 @@ function Cart() {
     });
     return price;
   };
-
+  
   return (
     <div className="d-flex cart-outer-div">
       <Header />
@@ -94,7 +95,7 @@ const CartWithItems = ({
           </h4>        
         </div>
         <div className="row" style={{ width: "100%" }}>
-          <div style={{ maxWidth: "130%" }} className="col-md-12">
+          <div style={{ maxWidth: "100%" }} className="col-md-12">
             <ul style={{ padding: 0 }}>
               {cartItems?.map((item: FoodItems, idx: number) => (
                 <li key={idx} style={{ listStyle: "none" }}>
@@ -133,13 +134,10 @@ const CartWithItems = ({
           </div>
         </div>
       </div>
-
+      
       {/* Checkout Button */}
-      <div
-        className="d-flex justify-content"
-        style={{ width: "100%", marginTop: "2%" }}
-      >
-        <button onClick={checkout} className="btn btn-primary" type="button">
+      <div id = "checkoutdiv"className="d-flex justify-content">
+        <button id="checkoutbtn" onClick={checkout} className="btn btn-primary" type="button">
           Checkout
         </button>
       </div>
