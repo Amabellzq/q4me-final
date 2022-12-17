@@ -30,6 +30,7 @@ function Payment() {
               <div className="col-md-4" style={{ cursor: "pointer" }}>
                 <div className="solanaPay">
                     <Wallet />
+                    <button id="pay_solana" className="btn btn-primary" type="button">Solana Pay</button>
                 </div>
                 <div className="cashpayment">
                   <button id="cashbtn" className="btn btn-primary" type="button">Pay By Cash</button>
